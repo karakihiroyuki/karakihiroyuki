@@ -1,16 +1,61 @@
-## Hi there 👋
+# 柄木 博之 / Hiroyuki Karaki
 
-<!--
-**karakihiroyuki/karakihiroyuki** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+**Webアプリケーションエンジニア**
+CMS基盤アーキテクチャの設計・拡張 / 時系列データ集計基盤の実装
 
-Here are some ideas to get you started:
+既存の構造を壊さず、必要なものだけを組み付ける開発をしています。
+運用中のシステムに対する非破壊的な機能拡張と、時系列データ集計基盤の設計・実装を専門とし、現在はアプリケーション開発に軸足を広げています。
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+🔗 **[hozolab.com](https://hozolab.com)**
+
+---
+
+## 専門領域
+
+### CMS基盤の設計・拡張
+- 上流コードを改変しない疎結合な拡張設計（更新耐性の確保）
+- カスタムメタボックス / 管理インタフェースの実装
+- ウィジェット基底クラスを継承した再利用可能コンポーネント
+- ルーティング層へのフックによる描画系の分岐
+
+### データ設計・集計処理
+- 独自スキーマの設計と時系列データの記録・集約
+- 分単位バケットによるリアルタイム集計の実装
+- 保持期間に基づくTTLパージの自動実行
+- メタ値に対する数値ソートと条件付き絞り込み
+
+### 保守性を重視した実装
+- 出力バッファ層でのHTML変換パイプライン
+- フェイルセーフを前提とした変換処理の設計
+- 環境依存・タイムゾーン起因の不具合の切り分け
+- マルチデバイス間で副作用を出さない修正
+
+---
+
+## 技術スタック
+
+`PHP` `WordPress` `MySQL` `JavaScript` `jQuery` `HTML` `CSS`
+
+**WordPress 領域**
+派生テーマ設計 / カスタムメタボックス / ウィジェット開発 / クエリ拡張・メタ検索 / `$wpdb` による独自テーブル操作 / WP-Cron / `template_include`・`query_vars` / メディアライブラリAPI
+
+---
+
+## 開発で大事にしていること
+
+- **原因を特定してから直す。** 推測でコードを書き換えない
+- **変更は必要最小限に。** 動作している機能には手を加えない
+- ある環境向けの修正が、他の環境の表示を壊さないことを確認してから適用する
+- どのファイルの、どこを、なぜ変更したのかを事前に明示する
+
+---
+
+## 書いたもの
+
+- [ログイン中のPCでだけ日次ランキングが消えた：切り分けの記録と、原因未特定のままの判断](https://hozolab.com/ranking-missing-when-logged-in/)
+
+---
+
+## お問い合わせ
+
+info@hozolab.com
